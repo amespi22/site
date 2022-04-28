@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Function Graph Tool</title>
+        <link href="../styles.css" type="text/css" rel="stylesheet"></link>
+    </head>
+    <body>
+        The tool can be found <a href="make_tree.py">here.</a>
+        <h2>To use:</h2> 
+        <ul>
+            <li>
+            Place the file in the directory created by <a
+                href="http://ibotpeaches.github.io/Apktool/">
+                apktool</a>(apktool d file.apk).
+            <li>
+            Run the python script giving it the name of the function 
+            you want to see a call graph for.
+            <li>
+            Study the pdf created...
+            <li>
+            For help, or more features, run the tool with -h
+            (./make_tree.py -h)
+        </ul>
+        <h2>Example:</h2>
+        ./make_tree.py "Luk/me/jstott/coordconv/LatitudeLongitude;->getLatitude()D"<br>
+        creats the following graph (click to zoom in)<br>
+        <a href=example.jpg><img src=example.jpg width=800></a>
+        <h2>Notes:</h2>
+        <ul>
+            <li>
+            The script assumes you have the program "dot" installed.
+            <li>
+            The script tries to make a dot file as well as the pdf.
+            <li>
+            You may need to make the script executable.(chmod +x make_tree.py) 
+            <li>
+            I welcome any feedback to improve the usability or functionality 
+            of the script.
+        </ul>
+        <a href="..">Homepage</a>
+        </body>
+</html>
